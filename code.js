@@ -1,5 +1,5 @@
 let colors = ["red", "green", "yellow", "pink", "cayan", "black", "DarkKhaki","DodgerBlue","Maroon"]
-let radius = [70, 60, 50 , 40, 30]
+let radius = [60, 50 , 40, 30]
 let circles = [];
 
 resize(canvas)  // make canvas and ctx full scrine
@@ -25,10 +25,6 @@ makeCirсle()
 setInterval(() => {
     makeCirсle()
 }, 5000);
-
-setInterval(() => {
-    console.log(Math.floor(Math.random()*(colors.length)))
-}, 1000);
 
 function makeCirсle(){
     if(circles.length<20){
